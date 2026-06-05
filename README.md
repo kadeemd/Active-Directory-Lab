@@ -50,6 +50,9 @@ Account lockout Threshold: Accounts are locked for 30 minutes after 5 consecutiv
 
 Interactive Logon Banner: Enforces a mandatory legal text notice before users log in.
 
+<img width="950" height="1027" alt="image" src="https://github.com/user-attachments/assets/50c6735e-2f97-4feb-8fae-6bf8c1f7e02e" />
+
+
 
 Role-Based Access Control (RBAC) File Share
 Storage Location: Configured a data directory path at C:\CompanyShares\SalesData
@@ -58,6 +61,11 @@ Access Mapping: Users in the Sales security group have modification rights and G
 Testing & Verification
 
 Password Security Verifcation: Logging in as an automated user (jbrown) requires inputting the temporary credential, where Windows immediately enforces the requirement to change the password before gaining access to the desktop.
+<img width="952" height="1027" alt="image" src="https://github.com/user-attachments/assets/e0559370-da85-4ae3-8e7b-dd94c4a6b0e2" />
+
 
 Access Control Verification: The S:\ drive maps successfully users inside the Sales Organizational Unit, while users outside the Sales OU (such as IT) are not able to access the network share.
+
+<img width="1511" height="1196" alt="image" src="https://github.com/user-attachments/assets/1f93a700-2519-4209-9583-1587e94ce3bf" />
+
 
