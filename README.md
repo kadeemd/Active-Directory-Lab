@@ -45,6 +45,8 @@ Security Baseline Group Policies (GPOs)
 
 Applied a baseline security policy accross the domain structure:
 Account lockout Threshold: Accounts are locked for 30 minutes after 5 consecutive invalid ligin attempts to protect against brute-force attacks.
+<img width="951" height="382" alt="image" src="https://github.com/user-attachments/assets/01511378-1ac4-4a30-ac5f-9fdf680d7d71" />
+
 
 Interactive Logon Banner: Enforces a mandatory legal text notice before users log in.
 
