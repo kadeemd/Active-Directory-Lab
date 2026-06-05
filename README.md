@@ -1,6 +1,6 @@
 # Active-Directory-Lab
 
-"An isolated enterprise-grade Windows Server 2022 Active Directory lab featuring network segmentation, DHCP/DNS deployment, Group Policy, and PowerShell onboarding automation."
+"An isolated enterprise-grade Windows Server 2022 Active Directory lab, featuring network segmentation, DHCP/DNS deployment, Group Policy, and PowerShell onboarding automation."
 
 This project was created to demonstrate my deployment, structure, and automation of an Active Directory Domain Services environment named `kadtech.local`. It was built inside a virtual sandbox using VirtualBox, and showcases automated employee onboarding via PowerShell, Group Policy security baselines, and core infrastructure network services (DHCP & DNS).
 
@@ -36,7 +36,7 @@ The Domain Controller handles dynamic IP assignments for endpoints on the intern
 
 <img width="941" height="442" alt="DHCP Address Pool" src="https://github.com/user-attachments/assets/ebcd5052-14d6-4896-8408-880a08527fe5" />
 
-* **DNS Server Configuration:** Points directly to `192.168.10.10` for domain resolution. I used `127.0.0.1` within my DNS settings as it is a loopback address.
+* **DNS Server Configuration:** Points directly to the Domain Controller (`192.168.10.10`) for domain resolution by using the loopback address `127.0.0.1`.
 
 <img width="402" height="452" alt="IP Configuration for Server" src="https://github.com/user-attachments/assets/ad5bfed5-970b-49af-bc5c-03b187ed256b" />
 
@@ -44,7 +44,7 @@ The Domain Controller handles dynamic IP assignments for endpoints on the intern
 
 ##  Identity Lifecycle Automation via PowerShell
 
-The following onboarding script automatically creates corporate employees for my environment using the `employee.csv` file. It converts names into a standardized lowercase username format, places the accounts in their respective department Organizational Units, and assigns them to Role-Based Access Control (RBAC) groups.
+The following onboarding script automatically creates corporate user accounts for employees within my environment using the `employee.csv` file. It converts names into a standardized lowercase username format, places the accounts in their respective department Organizational Units, and assigns them to Role-Based Access Control (RBAC) groups.
 
 <img width="730" height="551" alt="Onboarding Script " src="https://github.com/user-attachments/assets/8c35af50-824d-40e9-8641-6ea50c0f99bf" />
 <img width="750" height="520" alt="employeeCSVFile" src="https://github.com/user-attachments/assets/f22e3c33-f7c8-4af7-bd39-f5e44322e469" />
