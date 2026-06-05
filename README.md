@@ -71,7 +71,7 @@ Applied a baseline security policy across the domain structure:
 
 ##  Testing & Verification
 
-* **Password Security Verification:** Logging in as an automated user (`jbrown`) requires inputting the temporary credential, where Windows immediately enforces the requirement to change the password before gaining access to the desktop.
+* **Password Security Verification:** Logging in as an automated user (`asmith`) requires inputting the temporary credential, where Windows immediately enforces the requirement to change the password before gaining access to the desktop.
 
 <img width="952" height="1027" alt="PasswordchangeRequest" src="https://github.com/user-attachments/assets/259dd97b-8813-4fc4-bf9d-cb59b839c919" />
 
