@@ -75,7 +75,7 @@ Applied a baseline security policy across the domain structure:
 
 <img width="952" height="1027" alt="PasswordchangeRequest" src="https://github.com/user-attachments/assets/259dd97b-8813-4fc4-bf9d-cb59b839c919" />
 
-* **Access Control Verification:** The `S:\` drive maps successfully for users inside the Sales Organizational Unit, while users outside the Sales OU (such as IT) are not able to access the network share.
+* **Access Control Verification:** The `S:\` drive maps successfully for users inside the Sales Organizational Unit, while users outside the Sales OU (such as HR) are not able to access the network share.
 
 <img width="1161" height="1198" alt="asmithSharedDrive" src="https://github.com/user-attachments/assets/59c84894-7b01-4b2e-94b0-7dc25a1fc206" />
 
