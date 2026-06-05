@@ -1,7 +1,6 @@
 # ==============================================================================
 # Script Name: Automated-Onboarding.ps1
 # Author: Kadeem
-# Date: June 2026
 #
 # DESIGN & SECURITY ARCHITECTURE NOTE:
 # This script applies a temporary initial password ('Bootcamp2026!') to allow 
