@@ -19,7 +19,7 @@ Network Handling: Received its IP network configurations dynamically from the Do
 Core Implementations
 
 The direcory environment uses a geographic root structure with hyphenated naming conventions to keep assets organised.
-<img width="422" height="365" alt="image" src="https://github.com/user-attachments/assets/cef6a93f-8385-4bff-b00e-79bd47b6842a" />
+<img width="422" height="365" alt="kadtechTree" src="https://github.com/user-attachments/assets/5c29333f-7873-4f6e-8d33-ac28d32e0249" />
 
 
 
@@ -27,17 +27,19 @@ Core Network Services
 
 The Domain Controller handles dynamic IP assignments for endpoints on the internal switch:
 DHCP Scope Range: 192.168.10.50 to 192.168.10.100
-<img width="941" height="442" alt="image" src="https://github.com/user-attachments/assets/913b04ad-9918-4225-bace-bd447064a49c" />
+<img width="941" height="442" alt="DHCP Address Pool" src="https://github.com/user-attachments/assets/ebcd5052-14d6-4896-8408-880a08527fe5" />
 
 DNS Server: Points directly to 192.168.10.10 for domain resolution. I used 127.0.0.1 within my DNS settings as it is a loopback address.
-<img width="402" height="452" alt="image" src="https://github.com/user-attachments/assets/d1eda8d6-b1f4-45c6-9303-63453435dcf2" />
+<img width="402" height="452" alt="IP Configuration for Server" src="https://github.com/user-attachments/assets/ad5bfed5-970b-49af-bc5c-03b187ed256b" />
+
 
 
 
 Identity Lifecycle Automation via PowerShell
 
 The follwoing onboarding script automatically creates corporate employee roster for my environment using the employee.csv file. It converts names into standardized lowercase username format, places the accounts in their respective department Organizational Units, and assigns them to Role-Based Access Control (RBAC) groups.
-<img width="730" height="551" alt="image" src="https://github.com/user-attachments/assets/a507fd5d-03d1-4d06-8001-946674219b55" />
+<img width="730" height="551" alt="Onboarding Script " src="https://github.com/user-attachments/assets/8c35af50-824d-40e9-8641-6ea50c0f99bf" />
+
 
 
 
@@ -45,11 +47,11 @@ Security Baseline Group Policies (GPOs)
 
 Applied a baseline security policy accross the domain structure:
 Account lockout Threshold: Accounts are locked for 30 minutes after 5 consecutive invalid ligin attempts to protect against brute-force attacks.
-<img width="951" height="382" alt="image" src="https://github.com/user-attachments/assets/01511378-1ac4-4a30-ac5f-9fdf680d7d71" />
+<img width="951" height="382" alt="GroupPolicy Lockout" src="https://github.com/user-attachments/assets/a9abf369-0728-4c12-870c-f0ab31717fb9" />
 
 
 Interactive Logon Banner: Enforces a mandatory legal text notice before users log in.
-<img width="950" height="1027" alt="image" src="https://github.com/user-attachments/assets/50c6735e-2f97-4feb-8fae-6bf8c1f7e02e" />
+<img width="950" height="1027" alt="LoginMessage Policy" src="https://github.com/user-attachments/assets/3cf158bf-1944-434f-9cfa-fd3036a93496" />
 
 
 Role-Based Access Control (RBAC) File Share
@@ -59,11 +61,11 @@ Access Mapping: Users in the Sales security group have modification rights and G
 Testing & Verification
 
 Password Security Verifcation: Logging in as an automated user (jbrown) requires inputting the temporary credential, where Windows immediately enforces the requirement to change the password before gaining access to the desktop.
-<img width="952" height="1027" alt="image" src="https://github.com/user-attachments/assets/e0559370-da85-4ae3-8e7b-dd94c4a6b0e2" />
+<img width="952" height="1027" alt="PasswordchangeRequest" src="https://github.com/user-attachments/assets/259dd97b-8813-4fc4-bf9d-cb59b839c919" />
 
 
 Access Control Verification: The S:\ drive maps successfully users inside the Sales Organizational Unit, while users outside the Sales OU (such as IT) are not able to access the network share.
+<img width="1511" height="1196" alt="MappedDriveTest" src="https://github.com/user-attachments/assets/9969c7cd-fb96-4ead-a184-11f166594819" />
 
-<img width="1511" height="1196" alt="image" src="https://github.com/user-attachments/assets/1f93a700-2519-4209-9583-1587e94ce3bf" />
 
 
