@@ -39,6 +39,7 @@ Identity Lifecycle Automation via PowerShell
 
 The follwoing onboarding script automatically creates corporate employee roster for my environment using the employee.csv file. It converts names into standardized lowercase username format, places the accounts in their respective department Organizational Units, and assigns them to Role-Based Access Control (RBAC) groups.
 <img width="730" height="551" alt="Onboarding Script " src="https://github.com/user-attachments/assets/8c35af50-824d-40e9-8641-6ea50c0f99bf" />
+<img width="750" height="520" alt="employeeCSVFile" src="https://github.com/user-attachments/assets/f22e3c33-f7c8-4af7-bd39-f5e44322e469" />
 
 
 
@@ -65,7 +66,7 @@ Password Security Verifcation: Logging in as an automated user (jbrown) requires
 
 
 Access Control Verification: The S:\ drive maps successfully users inside the Sales Organizational Unit, while users outside the Sales OU (such as IT) are not able to access the network share.
-<img width="1511" height="1196" alt="MappedDriveTest" src="https://github.com/user-attachments/assets/9969c7cd-fb96-4ead-a184-11f166594819" />
+<img width="1161" height="1198" alt="asmithSharedDrive" src="https://github.com/user-attachments/assets/59c84894-7b01-4b2e-94b0-7dc25a1fc206" />
 
 
 
