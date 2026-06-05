@@ -18,7 +18,7 @@ Network Handling: Received its IP network configurations dynamically from the Do
 
 Core Implementations
 
-The direcory environment uses a geographic root structure with hyphenated naming conventions to keep assets organised.
+The directory environment uses a geographic root structure with hyphenated naming conventions to keep assets organised.
 <img width="422" height="365" alt="kadtechTree" src="https://github.com/user-attachments/assets/5c29333f-7873-4f6e-8d33-ac28d32e0249" />
 
 
@@ -37,7 +37,7 @@ DNS Server: Points directly to 192.168.10.10 for domain resolution. I used 127.0
 
 Identity Lifecycle Automation via PowerShell
 
-The follwoing onboarding script automatically creates corporate employee roster for my environment using the employee.csv file. It converts names into standardized lowercase username format, places the accounts in their respective department Organizational Units, and assigns them to Role-Based Access Control (RBAC) groups.
+The following onboarding script automatically creates corporate employees for my environment using the employee.csv file. It converts names into standardized lowercase username format, places the accounts in their respective department Organizational Units, and assigns them to Role-Based Access Control (RBAC) groups.
 <img width="730" height="551" alt="Onboarding Script " src="https://github.com/user-attachments/assets/8c35af50-824d-40e9-8641-6ea50c0f99bf" />
 <img width="750" height="520" alt="employeeCSVFile" src="https://github.com/user-attachments/assets/f22e3c33-f7c8-4af7-bd39-f5e44322e469" />
 
@@ -46,14 +46,13 @@ The follwoing onboarding script automatically creates corporate employee roster 
 
 Security Baseline Group Policies (GPOs)
 
-Applied a baseline security policy accross the domain structure:
+Applied a baseline security policy accross the domain structure.
+
 Account lockout Threshold: Accounts are locked for 30 minutes after 5 consecutive invalid ligin attempts to protect against brute-force attacks.
 <img width="951" height="382" alt="GroupPolicy Lockout" src="https://github.com/user-attachments/assets/a9abf369-0728-4c12-870c-f0ab31717fb9" />
 
-
 Interactive Logon Banner: Enforces a mandatory legal text notice before users log in.
 <img width="950" height="1027" alt="LoginMessage Policy" src="https://github.com/user-attachments/assets/3cf158bf-1944-434f-9cfa-fd3036a93496" />
-
 
 Role-Based Access Control (RBAC) File Share
 Storage Location: Configured a data directory path at C:\CompanyShares\SalesData
