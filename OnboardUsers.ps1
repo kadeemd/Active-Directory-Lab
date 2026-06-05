@@ -1,6 +1,6 @@
 # ==============================================================================
 # Script Name: Automated-Onboarding.ps1
-# Author: Kadeem Donovan
+# Author: Kadeem
 # Date: June 2026
 #
 # DESIGN & SECURITY ARCHITECTURE NOTE:
@@ -9,9 +9,9 @@
 # password complexity requirements are centrally enforced via Active Directory Group 
 # Policy Objects (GPOs), NOT hardcoded here. 
 #
-# By enforcing 'ChangePasswordAtLogon = $true', this script triggers a secure handshake:
-# the temporary credential is burned immediately upon initial workstation login, 
-# forcing the user to create a private password complying with our GPO complexity rules.
+# By enforcing 'ChangePasswordAtLogon = $true', this scrip ensures that
+# the temporary credential is changed immediately upon initial workstation login, 
+# forcing the user to create a private password that complies with the GPO complexity rules.
 # ==============================================================================
 
 Import-Module ActiveDirectory
@@ -45,6 +45,6 @@ foreach ($User in $Users) {
     # Physically execute the account creation in the database
     New-ADUser @UserParams
     
-    # Automatically nest the user into their respective department RBAC security group
+    # Automatically place the user into their respective department RBAC security group
     Add-ADGroupMember -Identity "g_LON_$($User.Department)_Staff" -Members $Username
 }
