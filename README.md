@@ -44,10 +44,18 @@ The Domain Controller handles dynamic IP assignments for endpoints on the intern
 
 ##  Identity Lifecycle Automation via PowerShell
 
+To simulate identity lifecycle management within my environmant, I developed two PowerShell scripts to automate onboarding and offboarding using CSV data files.
+
 The following onboarding script automatically creates corporate user accounts for employees within my environment using the `employee.csv` file. It converts names into a standardized lowercase username format, places the accounts in their respective department Organizational Units, and assigns them to Role-Based Access Control (RBAC) groups.
 
 <img width="730" height="551" alt="Onboarding Script " src="https://github.com/user-attachments/assets/8c35af50-824d-40e9-8641-6ea50c0f99bf" />
-<img width="750" height="520" alt="employeeCSVFile" src="https://github.com/user-attachments/assets/f22e3c33-f7c8-4af7-bd39-f5e44322e469" />
+<img width="736" height="476" alt="employeeCSVFile" src="https://github.com/user-attachments/assets/06cd1734-27bb-40a6-90cf-7bda36b4254a" />
+
+
+The following shows me running a script named OffboardingScript.ps1, which allows me to disable user accounts and move them into a OU named Disabled Users. This script uses a CSV file named OffboardEmployees.csv.
+
+<img width="1170" height="412" alt="OffboardScript running" src="https://github.com/user-attachments/assets/e3ff9f82-6304-4bac-80ee-bc58aeef0dac" />
+<img width="752" height="557" alt="Offboarded users" src="https://github.com/user-attachments/assets/5e3a45b5-f3a7-44b3-97e1-99bc6b745ea8" />
 
 ---
 
