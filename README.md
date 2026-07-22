@@ -1,6 +1,6 @@
 # Active-Directory-Lab
 
-"An isolated enterprise-grade Windows Server 2022 Active Directory lab, featuring network segmentation, DHCP/DNS deployment, Group Policy, and PowerShell onboarding automation."
+"An isolated Windows Server 2022 Active Directory lab, featuring network segmentation, DHCP/DNS deployment, Group Policy, and PowerShell onboarding automation."
 
 This project was created to demonstrate my deployment, structure, and automation of an Active Directory Domain Services environment named `kadtech.local`. It was built inside a virtual sandbox using VirtualBox, and showcases automated employee onboarding via PowerShell, Group Policy security baselines, and core infrastructure network services (DHCP & DNS).
 
